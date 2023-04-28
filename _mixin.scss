@@ -1,0 +1,41 @@
+//img
+@mixin img ($width,$max-width){
+    width: $width;
+    max-width: 100%;
+}
+
+/////container-1
+@mixin container-1($direction,$align-items,$flex-wrap,$margin-right){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align-items;
+    margin-right: $margin-right;
+   
+}
+
+@mixin center ($text-align,$font-family,$font-weight){
+    text-align:$text-align;
+    font-family:$font-family;
+    font-weight:$font-weight;
+   
+}
+
+
+
+//form
+@mixin border-all($width,$height,$border,$border-bottom,$margin-bottom) {
+    width: $width;
+    height:$height;
+    border: $border;
+    border-bottom:$border-bottom;
+    margin-bottom: $margin-bottom;
+   
+}
+
+//button
+@mixin button-sub($padding,$border,$margin-bottom){
+    padding: $padding;
+    border:$border;
+    margin-bottom:$margin-bottom;
+}
+
