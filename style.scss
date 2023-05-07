@@ -2,131 +2,142 @@
 @use "_colors" as styleColor;
 
 
-@media screen and (min-width:1163px){
-    
-    .container-1{
-        @include container-1(row,center,unset,unset)
-    }
-    
-    //img
-    img{
-        @include img (43.125rem,100%)
-    }
-    
-    h1,
-    button{
-        @include center (center,'Heebo',bold)
-        
-    }
-    p{
-        @include center (center,'Heebo',unset)
-    }
-    .span{
-        color: styleColor.$danger;
-    }
-    .container-2{
-        @include container-1(column,center,wrap,140px)
-    }
-    
-    label{
-        @include center(unset,'Heebo',bold);
-        color: styleColor.$grey;
-    }
-    .input{
-        @include border-all(300px,25px,none,3px solid #F50B33,25px);
-        background-color:styleColor.$border;
-    }
-    
-    //button
-    button{
-        @include button-sub(7px 30px,none,unset);
-        color: styleColor.$button;
-        background-color:styleColor.$danger ;
-    }
-}
+@media screen and (min-width:1163px) {
 
-@media screen and (min-width:900px) and (max-width:1162px){
-    .container-1{
-        @include container-1(row,center,unset,unset)
+    .container-1 {
+        @include container-1(row, center, unset, unset)
     }
 
     //img
-    img{
-        @include img (38.4375rem,100%)
+    img {
+        @include img (43.125rem, 100%)
     }
-    
+
     h1,
-    button{
-        @include center (center,'Heebo',bold)
-        
+    button {
+        @include center (center, 'Heebo', bold)
     }
-  
-    p{
-        @include center (center,'Heebo',unset)
+
+    p {
+        @include center (center, 'Heebo', unset)
     }
-    .span{
+
+    .span {
         color: styleColor.$danger;
     }
-    .container-2{
-        @include container-1(column,center,wrap,90px)
+
+    .container-2 {
+        @include container-1(column, center, wrap, 140px)
     }
-    label{
-        @include center(unset,'Heebo',bold);
+
+    label {
+        @include center(unset, 'Heebo', bold);
         color: styleColor.$grey;
     }
-    .input{
-        @include border-all(280px,25px,none,3px solid #F50B33,25px);
-        background-color:styleColor.$border;
+
+    .input {
+        @include border-all(300px, 25px, none, 3px solid #F50B33, 25px);
+        background-color: styleColor.$border;
     }
-    
+
     //button
-    button{
-        @include button-sub(7px 30px,none,unset);
+    button {
+        @include button-sub(7px 30px, none, unset);
         color: styleColor.$button;
-        background-color:styleColor.$danger ;
+        background-color: styleColor.$danger ;
     }
 }
 
-@media screen and (min-width:290px) and (max-width:899px){
-    .container-1{
-        @include container-1(column-reverse,center,unset,unset)
+@media screen and (min-width:900px) and (max-width:1162px) {
+    .container-1 {
+        @include container-1(row, center, unset, unset)
     }
 
     //img
-    img{
-        @include img (38.4375rem,100%)
+    img {
+        @include img (38.4375rem, 100%)
     }
-    
+
     h1,
-    button{
-        @include center (center,'Heebo',bold)
-        
+    button {
+        @include center (center, 'Heebo', bold)
     }
-    p{
-        @include center (center,'Heebo',unset)
+
+    p {
+        @include center (center, 'Heebo', unset)
     }
-    .span{
+
+    .span {
         color: styleColor.$danger;
     }
-    .container-2{
-        @include container-1(column,center,wrap,unset)
+
+    .container-2 {
+        @include container-1(column, center, wrap, 90px)
     }
-    label{
-        @include center(unset,'Heebo',bold);
+
+    label {
+        @include center(unset, 'Heebo', bold);
         color: styleColor.$grey;
     }
-    .input{
-        @include border-all(280px,25px,none,3px solid #F50B33,25px);
-        background-color:styleColor.$border;
+
+    .input {
+        @include border-all(280px, 25px, none, 3px solid #F50B33, 25px);
+        background-color: styleColor.$border;
     }
-    
+
     //button
-    button{
-        @include button-sub(7px 30px,none,20px);
+    button {
+        @include button-sub(7px 30px, none, unset);
         color: styleColor.$button;
-        background-color:styleColor.$danger ;
+        background-color: styleColor.$danger ;
     }
 }
 
+@media screen and (min-width:290px) and (max-width:899px) {
+    .container-1 {
+        @include container-1(column-reverse, center, unset, unset)
+    }
 
+    //img
+    img {
+        @include img (38.4375rem, 100%)
+    }
 
+    h1,
+    button {
+        @include center (center, 'Heebo', bold)
+    }
+
+    p {
+        @include center (center, 'Heebo', unset)
+    }
+
+    .span {
+        color: styleColor.$danger;
+    }
+
+    .container-2 {
+        @include container-1(column, center, wrap, unset)
+    }
+
+    label {
+        @include center(unset, 'Heebo', bold);
+        color: styleColor.$grey;
+    }
+
+    .input {
+        @include border-all(280px, 25px, none, 3px solid #F50B33, 25px);
+        background-color: styleColor.$border;
+    }
+
+    //button
+    button {
+        @include button-sub(7px 30px, none, 20px);
+        color: styleColor.$button;
+        background-color: styleColor.$danger ;
+    }
+
+    .button-control {
+        @include button-control(column)
+    }
+}
